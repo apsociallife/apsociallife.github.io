@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miracle on 134th Street</title>
+    <meta property="og:title" content="Miracle on 134th Street">
+    <meta property="og:description" content="Miracle on 134th Street is a walk-through Christmas light experience in Renton, WA. We'll be back in 2025, opening the day after Thanksgiving.">
+    <meta property="og:image" content="https://miracleon134th.blob.core.windows.net/$web/cover_image.png">
+    <meta property="og:url" content="https://www.miracleon134th.st">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Miracle on 134th Street">
+    <meta name="twitter:description" content="Miracle on 134th Street is a walk-through Christmas light experience in Renton, WA. We'll be back in 2025, opening the day after Thanksgiving.">
+    <meta name="twitter:image" content="https://miracleon134th.blob.core.windows.net/$web/cover_image.png">
+    <style>
+        body {
+            margin: 0;
+            background-image: url('background.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: top left;
+            background-size: auto;
+            min-height: 100vh;
+            overflow-y: auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            font-family: 'Century Gothic', sans-serif;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: calc(100% - 40px);
+            max-width: 800px;
+            margin: 20px;
+        }
+        .header-top {
+            display: flex;
+            width: 100%;
+        }
+        .header-top img {
+            width: 50%;
+            height: auto;
+            object-fit: contain;
+        }
+        .header-bottom {
+            width: 100%;
+            margin: 0;
+        }
+        .header-bottom img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+        .announcement {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+            color: lightgreen;
+        }
+        .announcement a {
+            text-decoration: none;
+            color:#00AAff;
+        }
+        .description {
+            margin-top: 20px;
+            padding: 10px;
+            text-align: center;
+            font-size: 1.7em;
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.25);
+            border-radius: 10px;
+        }
+        .video-container {
+            margin-top: 20px;
+            width: 100%;
+            max-width: 800px;
+            position: relative;
+            cursor: pointer;
+        }
+        .video-overlay {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            z-index: 2;
+        }
+        @media (max-width: 400px) {
+            .video-overlay {
+                font-size: 0.6em;
+                top: 5px;
+                left: 5px;
+            }
+            .announcement {
+                font-size: 1.5em;
+                margin-top: 30px;
+            }
+            .description {
+                font-size: 1.2em;
+            }
+            .header-top {
+                flex-direction: column;
+            }
+            .header-top img {
+                width: 100%;
+            }
+            .header-bottom {
+                padding-top: 20px;
+            }
+            .header-bottom img {
+                width: 100%;
+                height: auto;
+                content: none;
+            }
+            .header-bottom img {
+                content: url('WalkThrough2.png');
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="header-top">
+            <img src="MiracleOn.png" alt="Miracle On">
+            <img src="134thStreet.png" alt="134th Street">
+        </div>
+        <div class="header-bottom">
+            <img src="WalkThrough.png" alt="Walk Through">
+        </div>
+        <div class="announcement">
+            <a href="https://maps.app.goo.gl/N8nvEhwB6AqE3aiC8" target="_blank">17334 SE 134TH ST</a> in Renton
+            <br>
+            We'll be back in 2025, opening the day after Thanksgiving
+        </div>
+        <div class="video-container" onclick="swapToYouTube()">
+            <div class="video-overlay">We love sharing our little wonderland with you. Click to watch the 2024 walkthrough!</div>
+            <video width="100%" autoplay loop muted playsinline>
+                <source src="https://miracleon134th.blob.core.windows.net/$web/loop.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="announcement">
+            For the latest updates, visit us on
+            <a href="https://www.facebook.com/people/Miracle-on-134th-Street/61568369154980/" target="_blank">Facebook</a>
+        </div>
+        <div class="description">
+            Hello! We are David and Joi Rubino and every Christmas we transform our front yard into a walk-through Christmas light experience. In 2024 we had 52,000 lights, and in 2025 we plan to hit 100,000! Join us later this year starting the day after Thanksgiving.
+        </div>
+        <div class="david-joi">
+            <img src="DavidJoi.png" alt="David and Joi" style="margin-top: 20px; max-width: 100%; height: auto;">
+        </div>
+    </div>
+    <script>
+        function swapToYouTube() {
+            const videoContainer = document.querySelector('.video-container');
+            videoContainer.innerHTML = '<iframe width="100%" height="450" src="https://www.youtube.com/embed/uUbDorBmPRI?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+        }
+    </script>
+</body>
+</html>
