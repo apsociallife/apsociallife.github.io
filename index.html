@@ -66,6 +66,37 @@
             text-decoration: none;
             color:#00AAff;
         }
+        .donate-row {
+            margin-top: 20px;
+            width: 100%;
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+            gap: 12px;
+            color: lightgreen;
+            font-weight: bold;
+        }
+        .donate-message {
+            flex: 1 1 67%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: clamp(1.25em, 3.2vw, 2.2em);
+            margin: 0;
+            line-height: 1.1;
+        }
+        .donate-qr {
+            flex: 0 0 33%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .donate-qr img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
         .description {
             margin-top: 20px;
             padding: 10px;
@@ -103,6 +134,9 @@
             }
             .description {
                 font-size: 1.2em;
+            }
+            .donate-message {
+                font-size: clamp(1.0em, 5.0vw, 1.5em);
             }
             .header-top {
                 flex-direction: column;
@@ -149,12 +183,12 @@
             For the latest updates, visit us on
             <a href="https://www.facebook.com/people/Miracle-on-134th-Street/61568369154980/" target="_blank">Facebook</a>
         </div>
-        <div class="announcement" style="display: flex; align-items: center; justify-content: center; margin-top: 20px;">
-            <p style="margin-right: 10px; font-size: 1.2em; color: lightgreen;">
-                Did you visit us and want to donate? Scan or click here:
+        <div class="donate-row">
+            <p class="donate-message">
+                Did you visit us and want to donate? Scan or click here
             </p>
-            <a href="/donate">
-                <img src="QRCode.png" alt="QR Code for donations" style="width: 100px; height: 100px;">
+            <a class="donate-qr" href="/donate">
+                <img src="QRCode.png" alt="QR code to donate">
             </a>
         </div>
         <div class="description">
