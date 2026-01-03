@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miracle on 134th Street</title>
     <meta property="og:title" content="Miracle on 134th Street">
-    <meta property="og:description" content="Miracle on 134th Street is a walk-through Christmas light experience in Renton, WA. We're open for 2025! Light are on every night until 11:00 PM, through Jan 1, 2026.">
+    <meta property="og:description"
+        content="Miracle on 134th Street is a walkthrough Christmas light experience in Renton, WA. We are done for the 2025 season, but will be back for our fourth year the day after Thanksgiving in November 2026">
     <meta property="og:image" content="https://miracleon134th.st/cover_image.jpg">
     <meta property="og:url" content="https://www.miracleon134th.st">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Miracle on 134th Street">
-    <meta name="twitter:description" content="Miracle on 134th Street is a walk-through Christmas light experience in Renton, WA. We're open for 2025! Light are on every night until 11:00 PM, through Jan 1, 2026.">
+    <meta name="twitter:description"
+        content="Miracle on 134th Street is a walkthrough Christmas light experience in Renton, WA. We are done for the 2025 season, but will be back for our fourth year the day after Thanksgiving in November 2026">
     <meta name="twitter:image" content="https://miracleon134th.st/cover_image.jpg">
     <style>
         body {
@@ -28,6 +31,7 @@
             flex-direction: column;
             font-family: 'Century Gothic', sans-serif;
         }
+
         .content {
             display: flex;
             flex-direction: column;
@@ -36,25 +40,30 @@
             max-width: 800px;
             margin: 20px;
         }
+
         .header-top {
             display: flex;
             width: 100%;
         }
+
         .header-top img {
             width: 50%;
             height: auto;
             object-fit: contain;
         }
+
         .header-bottom {
             width: 100%;
             margin: 0;
         }
+
         .header-bottom img {
             width: 100%;
             max-width: 100%;
             height: auto;
             object-fit: contain;
         }
+
         .announcement {
             margin-top: 60px;
             text-align: center;
@@ -62,10 +71,12 @@
             font-weight: bold;
             color: lightgreen;
         }
+
         .announcement a {
             text-decoration: none;
-            color:#00AAff;
+            color: #00AAff;
         }
+
         .donate-row {
             margin-top: 20px;
             width: 100%;
@@ -76,6 +87,7 @@
             color: lightgreen;
             font-weight: bold;
         }
+
         .donate-message {
             flex: 1 1 67%;
             display: flex;
@@ -86,17 +98,20 @@
             margin: 0;
             line-height: 1.1;
         }
+
         .donate-qr {
             flex: 0 0 33%;
             display: flex;
             justify-content: flex-end;
             align-items: center;
         }
+
         .donate-qr img {
             width: 100%;
             max-width: 100%;
             height: auto;
         }
+
         .description {
             margin-top: 20px;
             padding: 10px;
@@ -106,6 +121,7 @@
             background: rgba(255, 255, 255, 0.25);
             border-radius: 10px;
         }
+
         .video-container {
             margin-top: 20px;
             width: 100%;
@@ -113,51 +129,64 @@
             position: relative;
             cursor: pointer;
         }
+
         .video-overlay {
             position: absolute;
             top: 20px;
             left: 20px;
+            right: 20px;
+            /* Added to ensure equal margin on the right */
             color: white;
             font-size: 1.2em;
             font-weight: bold;
             z-index: 2;
         }
+
         @media (max-width: 400px) {
             .video-overlay {
                 font-size: 0.6em;
                 top: 5px;
                 left: 5px;
             }
+
             .announcement {
                 font-size: 1.5em;
                 margin-top: 30px;
             }
+
             .description {
                 font-size: 1.2em;
             }
+
             .donate-message {
                 font-size: clamp(1.0em, 5.0vw, 1.5em);
             }
+
             .header-top {
                 flex-direction: column;
             }
+
             .header-top img {
                 width: 100%;
             }
+
             .header-bottom {
                 padding-top: 20px;
             }
+
             .header-bottom img {
                 width: 100%;
                 height: auto;
                 content: none;
             }
+
             .header-bottom img {
                 content: url('WalkThrough2.png');
             }
         }
     </style>
 </head>
+
 <body>
     <div class="content">
         <div class="header-top">
@@ -167,13 +196,13 @@
         <div class="header-bottom">
             <img src="WalkThrough.png" alt="Walk Through">
         </div>
+        <div class="announcement">Miracle on 134th Street is a walkthrough Christmas light experience in Renton, WA. We are done for the 2025 season, but will be back for our fourth year the day after Thanksgiving in November 2026</div>
         <div class="announcement">
             <a href="https://maps.app.goo.gl/N8nvEhwB6AqE3aiC8" target="_blank">17334 SE 134TH ST</a> in Renton, WA
-            <p>
-            We're open for 2025! Lights are on every night until 11:00 PM, through Jan 1, 2026.
         </div>
         <div class="video-container" onclick="swapToYouTube()">
-            <div class="video-overlay">We love sharing our little wonderland with you. Click to watch the 2025 walkthrough video... and then visit for yourself if you can.</div>
+            <div class="video-overlay">We love sharing our winter wonderland with you. Click to watch the 2025
+                walkthrough video, and come visit us in 2026 if you can.</div>
             <video width="100%" autoplay loop muted playsinline>
                 <source src="loop.mp4" type="video/mp4">
                 Your browser does not support the video tag.
@@ -181,7 +210,8 @@
         </div>
         <div class="announcement">
             For the latest updates, visit us on
-            <a href="https://www.facebook.com/people/Miracle-on-134th-Street/61568369154980/" target="_blank">Facebook</a>
+            <a href="https://www.facebook.com/people/Miracle-on-134th-Street/61568369154980/"
+                target="_blank">Facebook</a>
         </div>
         <div class="donate-row">
             <p class="donate-message">
@@ -192,13 +222,16 @@
             </a>
         </div>
         <div class="description">
-            Hello from 134th Street in the East Renton Highlands, Washington. Every Christmas we transform our front yard into a walk-through Christmas light experience. 2025 is our 3rd year, and we have over 100,000 lights... twice as many as last year, and triple the first season. Come on by, park in our large driveway, and stay as long as you like whether we're home or not.
+            Hello from 134th Street in the East Renton Highlands, Washington. Every Christmas we transform our front yard into a walk-through Christmas light experience. 2025 was our 3rd year and we had 112,014 lights... not that anyone is counting! Our experience is a little differant though. We invite everyone to park in our large driveway and walk through the lights on the many little pathways we've created.
+            <P>We try to create a special place to spend time with friends and family, get some great Christmasy photos, and be dazzled by lights lights lights everywhere. It will always be completely free, it's kid and even dog friendly, and it's open whether we're home or not.
+            <P>We hope to see you when we reopen the day after Thanksgiving 2026!
             <p style="font-family: 'Brush Script MT', cursive; font-size: 1.5em; margin-top: 10px;">
                 David and Joi Rubino, Levi Thomas
             </p>
         </div>
         <div class="david-joi">
-            <img src="DavidJoiLevi.jpg" alt="David, Joi, and Levi posing under a Christmas light archway" style="margin-top: 20px; max-width: 100%; height: auto;">
+            <img src="DavidJoiLevi.jpg" alt="David, Joi, and Levi posing under a Christmas light archway"
+                style="margin-top: 20px; max-width: 100%; height: auto;">
         </div>
     </div>
     <script>
@@ -208,4 +241,5 @@
         }
     </script>
 </body>
+
 </html>
